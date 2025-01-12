@@ -1,0 +1,133 @@
+body{
+  font-family: 'Arial', sans-serif;
+  background: url('/src/images/th.jpeg') no-repeat;
+  background-size: 100%;
+  
+  
+}
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+article, header, section, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+display: block;
+}
+body {
+color: #824040;
+font-size: 100%;
+line-height: 24px;
+margin: 0;
+padding:0;
+font-family: "Raleway",sans-serif;
+}
+.phone-auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ef7878;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phone-auth-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.phone-auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-number-input,
+.verification-code-input {
+  margin-bottom: 15px;
+}
+
+.phone-number-input input,
+.verification-code-input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #675a5a;
+  border-radius: 5px;
+}
+
+.action-buttons button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: rgb(90, 72, 72);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-buttons button:disabled {
+  background-color: #81b5fa;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.user-icon {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(239, 149, 149, 0.2);
+  padding: 20px 30px;
+  width: 400px;
+  text-align: center;
+}
+
+.user-icon h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5e4a4a;
+  margin-bottom: 20px;
+}
+
+.user-icon input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.user-icon button {
+  width: 48%;
+  padding: 10px;
+  margin: 10px 1%;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff7a7a, #ffae50);
+}
+
+.user-icon button:hover {
+  background: linear-gradient(90deg, #ffae50, #ff7a7a);
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #444;
+            border-bottom: 2px solid #f4f4f9;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .editable {
+            border: 1px dashed #ccc;
+            padding: 5px;
+            background-color: #fafafa;
+        }
+
+        .editable:focus {
+            outline: none;
+            border: 1px dashed #007BFF;
+            background-color: #e8f4ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 contenteditable="true" class="editable">Full Name</h1>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <ul>
+                <li contenteditable="true" class="editable">Email: [your.email@example.com]</li>
+                <li contenteditable="true" class="editable">Phone: [Your Phone Number]</li>
+                <li contenteditable="true" class="editable">LinkedIn: [LinkedIn Profile Link]</li>
+                <li contenteditable="true" class="editable">Portfolio: [Portfolio Link]</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p contenteditable="true" class="editable">[Write a concise paragraph summarizing your professional background, key skills, and career goals. Focus on what makes you stand out.]</p>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li contenteditable="true" class="editable">
+                    <strong>[Job Title]</strong> at <strong>[Company Name]</strong> ([Start Date] - [End Date])<br>
+                    [Key responsibilities or achievements]
+                </li>
+                <li contenteditable="true" class="editable">
+                    <strong>[Job Title]</strong> at <strong>[Company Name]</strong> ([Start Date] - [End Date])<br>
+                    [Key responsibilities or achievements]
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li contenteditable="true" class="editable">
+                    <strong>[Degree]</strong> - <strong>[School/University Name]</strong> ([Graduation Date])<br>
+                    [Relevant coursework, honors, or achievements]
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li contenteditable="true" class="editable">[Skill #1]</li>
+                <li contenteditable="true" class="editable">[Skill #2]</li>
+                <li contenteditable="true" class="editable">[Skill #3]</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li contenteditable="true" class="editable">[Certification Name] - [Issuing Organization] ([Date Earned])</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Save content functionality
+        document.querySelectorAll('.editable').forEach(element => {
+            element.addEventListener('blur', () => {
+                console.log('Saved content:', element.innerHTML);
+            });
+        });
+    </script>
+</body>
+</html>
